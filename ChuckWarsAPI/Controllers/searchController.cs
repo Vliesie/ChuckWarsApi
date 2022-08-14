@@ -3,12 +3,14 @@ using Microsoft.AspNetCore.Mvc;
 using ChuckWarsAPI.Core;
 using Newtonsoft.Json;
 using ChuckWarsAPI.Entities;
+using ChuckWarsAPI.Attributes;
 
 namespace ChuckWarsAPI.Controllers
 {
-    
-    [Route("[controller]/[action]")]
+  
+    [Route("[controller]")]
     [ApiController]
+    [ApiKey]
     public class searchController : ControllerBase
     {
         searchCore core = new searchCore();
@@ -35,24 +37,27 @@ namespace ChuckWarsAPI.Controllers
                 string responseSwapi = await client.GetStringAsync(Urlswapi);
                 dataSwapi = JsonConvert.DeserializeObject<SharpEntityResults<People>>(responseSwapi);
             }
-            if(dataChuck.Total != "0" && dataSwapi.count > 0)
+            if(dataChuck != null && dataSwapi != null)
             {
-                ChuckSwapiSearch _chuckswapi = await core.SwapChucksearch(dataSwapi, dataChuck);
-                return new JsonResult(_chuckswapi);
-            }
-            else 
-            {
-                var error =  "No Values Found In SwAPI or ChuckAPI";
+                if (dataChuck.Total != "0" && dataSwapi.count > 0)
+                {
+                    ChuckSwapiSearch _chuckswapi = await core.SwapChucksearch(dataSwapi, dataChuck);
+                    return new JsonResult(_chuckswapi);
+                }
+                else if (dataChuck.Total == "0" && dataSwapi.count == 0)
+                {
+                    var error = "No Values Found In SwAPI or ChuckAPI";
 
-                return new JsonResult(error);
-            }
-
+                    return new JsonResult(error);
+                }
+            } 
             if (dataChuck != null)
             {
                 ChuckSearch chuckresults = await core.ChuckSearch(dataChuck);
 
                 return new JsonResult(chuckresults);
-            } else if (dataSwapi != null)
+            }  
+            if (dataSwapi != null)
             {
                 await core.Swapisearch(dataSwapi);
                SharpEntityResults<People> swapiResults = await core.Swapisearch(dataSwapi);

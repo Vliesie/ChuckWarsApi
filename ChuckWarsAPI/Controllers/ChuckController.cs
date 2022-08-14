@@ -5,11 +5,14 @@ using ChuckWarsAPI.Models;
 using System.Text.Json;
 using Newtonsoft.Json;
 using System.Net;
+using ChuckWarsAPI.Attributes;
 
 namespace ChuckWarsAPI.Controllers
 {
+  
     [Route("[controller]/[action]")]
     [ApiController]
+    [ApiKey]
     public class ChuckController : ControllerBase
     {
 

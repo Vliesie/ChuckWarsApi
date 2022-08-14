@@ -16,12 +16,13 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using ChuckWarsAPI.Core;
 using System.Text.Json;
+using ChuckWarsAPI.Attributes;
 
 namespace ChuckWarsAPI.Controllers
 {
     [Route("[controller]/[action]")]
     [ApiController]
-
+    [ApiKey]
     public class SwapiController : ControllerBase
     {
         StarWarsCore starCore = new StarWarsCore();
