@@ -5535,11 +5535,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Janro\\source\\repos\\ChuckWarsAPI\\ChuckWarsAPI\\ChuckWarsAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Janro\\source\\Chuckwars\\ChuckWarsAPI\\ChuckWarsAPI.csproj",
       "projectName": "ChuckWarsAPI",
-      "projectPath": "C:\\Users\\Janro\\source\\repos\\ChuckWarsAPI\\ChuckWarsAPI\\ChuckWarsAPI.csproj",
+      "projectPath": "C:\\Users\\Janro\\source\\Chuckwars\\ChuckWarsAPI\\ChuckWarsAPI.csproj",
       "packagesPath": "C:\\Users\\Janro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Janro\\source\\repos\\ChuckWarsAPI\\ChuckWarsAPI\\obj\\",
+      "outputPath": "C:\\Users\\Janro\\source\\Chuckwars\\ChuckWarsAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Janro\\AppData\\Roaming\\NuGet\\NuGet.Config",

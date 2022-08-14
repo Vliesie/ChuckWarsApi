@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lTBPkNfhi4pHemcEGJhlEsxZ3qQ4GY0AMK3Aythptjx47U9KCDOrFV5L6UDR/cK7Gkr/S7gtZ38xY3DaG5zXJg==",
+  "dgSpecHash": "kJ1vIRd0Ek9COgvoET7yRn9bsMtRuHAEGc0bS/bklTBMiKIxL9ACuKHKGQRWGD1SX2L+uGi5kPScDlJ2/mPuDg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Janro\\source\\repos\\ChuckWarsAPI\\ChuckWarsAPI\\ChuckWarsAPI.csproj",
+  "projectFilePath": "C:\\Users\\Janro\\source\\Chuckwars\\ChuckWarsAPI\\ChuckWarsAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Janro\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "C:\\Users\\Janro\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.9\\microsoft.aspnet.webapi.core.5.2.9.nupkg.sha512",
