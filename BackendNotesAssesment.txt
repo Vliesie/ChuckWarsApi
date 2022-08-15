@@ -1,0 +1,12 @@
+Project Notes:
+
+Main Concerns:
+-Security: Wanted To implement OAuth But Heroku Vars dont work with the tokens for some odd reason
+-Search: Using way to Many If Statements to see if values are null or empty theres a way better practice approach to this maybe Switch? And Decouple the checks create a Handler Component to do the checks and pass back values and pass methods depending on reponse in a switch swapping out expression interface
+-searchCore: Not much use here Running way to many of the initial checks on the component this needs to be decoupled.
+-Entities: Could Simplify this with some DI and more creative class constructs.
+-MiddleWare: Require Security Middle were was Previously Implemented found Difficuly with Heroku so moved to Attributing Controllers instead
+-ApiCore: Created ErrorHandeling, But Unsure How to pass Error Responses Properly so the implemention became redudant kept it to showcase my intentions.
+-Models: Was intending on using In-Memory DB to lessen the Qeury Ammounts But my Implimintations fell flat and my approaches were wrong.
+-Missed Stuff like GraphQP/Containerism - I have some BIOS issues on my Main Machine So Virtualization cant be turned on thus didnt use something like docker to load to heroku honestly not familiar with GraphQL Tech Thus decided its best I dont approach it untill I learn it. Theres some more things I couldve used Best Praciteces on and just in general been working as a Solo Dev for Far To long Its become difficult to keep track. 
+
