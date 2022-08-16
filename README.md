@@ -9,6 +9,9 @@ Namely:
 
 - https://api.chucknorris.io
 
+#Front End SPA:
+https://chuckwarsfront.herokuapp.com/
+
 Notes:
 Advanced Security is not present due to complications with Heroku Hosting. Plans were to Implement OAuth with Automatic Key Generating with user credentials using a Endpoint /user/auth Heroku Hosting has complicated this process. Potential future update.
 
