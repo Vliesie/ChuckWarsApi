@@ -13,7 +13,7 @@ Namely:
 https://chuckwarsfront.herokuapp.com/
 
 
-API Interface & info:
+## API Interface & info:
 https://chuckwarsapi.herokuapp.com/swagger/index.html
 
 Notes:
